@@ -87,21 +87,21 @@
                 <div class="block-body">
                     <div class="form-group">
                         <label for="inputEmail3" class="">First Name:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="lastname">Last Name:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="inputEmail3">ID Number:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
@@ -109,7 +109,7 @@
                     
                     <div class="form-group">
                         <label for="inputEmail3">Email:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
@@ -117,7 +117,7 @@
                     
                     <div class="form-group">
                         <label for="inputEmail3">Phone:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
@@ -125,7 +125,7 @@
                     
                     <div class="form-group">
                         <label for="inputEmail3">Address:</label>
-                        <div class="inner-addon right-addon">
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
@@ -133,34 +133,60 @@
                     
                     <div class="form-group">
                         <label for="inputEmail3">Marital status:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="radio" name="marital"> Married
-                          <input type="radio" name="marital"> Single
-                          <i class="glyphicon glyphicon-question-sign"></i>
+                        <div class="inner-addon right-addon w75">
+                            <div class="radio-group">
+                              <label class="radio-inline">
+                                <input type="radio" name="maritalRadios" 
+                                    value="married" checked>Married
+                              </label>
+                               
+                              <label class="radio-inline">
+                                <input type="radio" name="maritalRadios" 
+                                    value="single" checked>Single
+                              </label>                               
+                            </div>
+                          
+                            <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="inputEmail3">Children:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
+                        <div class="inner-addon right-addon w75">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="inputEmail3">Sex:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
+                        <div class="inner-addon right-addon w75">
+                          <div class="radio-group">
+                              <label class="radio-inline">
+                                <input type="radio" name="sexRadios" 
+                                    value="male" checked>Male
+                              </label>
+                               
+                              <label class="radio-inline">
+                                <input type="radio" name="sexRadios" 
+                                    value="female" checked>Female
+                              </label>
+                               
+                            </div>
+                          
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3">Yyear of birth:</label>
-                        <div class="inner-addon right-addon">
+                        <label for="inputEmail3">Year of birth:</label>
+                        <div class="inner-addon right-addon w75">
                           <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
+                          
                         </div>
                     </div>
                 </div>
@@ -174,7 +200,31 @@
                  
                  <div class="block-body">
                     <div class="form-group">
-                        <label for="inputEmail3" class="">First Name:</label>
+                        <label for="inputEmail3" class="">Bank account details:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname">Account history (years):</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Credit card number:</label>
                         <div class="inner-addon right-addon">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
@@ -182,76 +232,13 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="lastname">Last Name:</label>
+                        <label for="inputEmail3">Account name:</label>
                         <div class="inner-addon right-addon">
                           <input type="text" class="form-control" placeholder="John">
                           <i class="glyphicon glyphicon-question-sign"></i>
                         </div>
-                    </div>
+                    </div>                   
                     
-                    <div class="form-group">
-                        <label for="inputEmail3">ID Number:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Email:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Phone:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Address:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Marital status:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Children:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Sex:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3">Yyear of birth:</label>
-                        <div class="inner-addon right-addon">
-                          <input type="text" class="form-control" placeholder="John">
-                          <i class="glyphicon glyphicon-question-sign"></i>
-                        </div>
-                    </div>
                 </div>
              </div> <!--end Bank Account-->             
           </div>
@@ -265,72 +252,97 @@
                 
                 <div class="block-body">
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Number of wage earner:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Total family income:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Savings:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Housing ownership:</label>
+                        <div class="inner-addon right-addon">
+                            <div class="radio-group">
+                              <label class="radio-inline">
+                                <input type="radio" name="houseRadios" 
+                                    value="married" checked>Yes
+                              </label>
+                               
+                              <label class="radio-inline">
+                                <input type="radio" name="houseRadios" 
+                                    value="single" checked>No
+                              </label>                               
+                            </div>
+                          
+                            <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Vehicle ownership:</label>
+                        <div class="inner-addon right-addon">
+                            <div class="radio-group">
+                              <label class="radio-inline">
+                                <input type="radio" name="vehicleRadios" 
+                                    value="married" checked>Yes
+                              </label>
+                               
+                              <label class="radio-inline">
+                                <input type="radio" name="vehicleRadios" 
+                                    value="single" checked>No
+                              </label>                               
+                            </div>
+                          
+                            <i class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Personal income:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Vehicle value:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Total debts:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
                         </div>
                     </div>
                 </div>
@@ -344,72 +356,75 @@
                 
                 <div class="block-body">
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Occupation:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Education in years:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Employment history <br/>
+                            (Years in the job):</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Employer details:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Employment Status:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        <label for="inputEmail3">Major:</label>
+                        <div class="inner-addon right-addon">
+                          <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>                          
                         </div>
                     </div>
                 </div>

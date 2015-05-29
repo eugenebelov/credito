@@ -51,8 +51,15 @@ body {
 
 /* REGISTRATION */
 
-.registration {
-    
+.radio-group {
+    text-align: left;
+}
+
+.offset-btm-50 {
+    margin-bottom: 50px;
+}
+
+.registration {    
     div.register-btn {
         text-align: center;
         margin-top: 80px; 
@@ -66,9 +73,6 @@ body {
 }
 
 .user-details {
-    .offset-btm-50 {
-        margin-bottom: 50px;
-    }
     
     /* enable absolute positioning */
     .inner-addon { 
@@ -79,7 +83,6 @@ body {
     .inner-addon .glyphicon {
       position: absolute;
       padding: 10px;
-      pointer-events: none;
     }
 
     /* align icon */
@@ -102,14 +105,17 @@ body {
         float: right;
     }
     
-    .block-body {
-        .form-group {
-            text-align: right;
-        }
-        
-        .form-group .inner-addon{
+    .block-body {  
+        .form-group .inner-addon.w75 {
             display: inline-block;
             width: 75%;
+            float: right;
+            padding-left: 10px;
+        }
+        
+        .form-group .inner-addon {
+            display: inline-block;
+            width: 60%;
             float: right;
             padding-left: 10px;
         }
