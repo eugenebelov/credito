@@ -21,92 +21,401 @@
     <![endif]-->
 
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        
         <h3 class="text-muted">Credito</h3>
       </div>
       
-      <!-- Registration template -->
-
-      <div id="regirstration" class="registration form-horizontal">
+      <div id="regirstration" class="container registration form-horizontal"> <!--registration-->
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">First Name:</label>
-            <div class="col-sm-10">
+            <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+            <div class="col-sm-9">
                 <input type="text" class="form-control" id="inputEmail3" placeholder="John">
             </div>
         </div>
         
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Last Name:</label>
-            <div class="col-sm-10">
+            <label for="inputEmail3" class="col-sm-3 control-label">Last Name:</label>
+            <div class="col-sm-9">
               <input type="text" class="form-control" id="inputEmail3" placeholder="Doe">
             </div>
         </div>
         
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
-            <div class="col-sm-10">
+            <label for="inputEmail3" class="col-sm-3 control-label">Email:</label>
+            <div class="col-sm-9">
               <input type="email" class="form-control" id="inputEmail3" placeholder="email@company.com">
             </div>
         </div>
         
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Phone:</label>
-            <div class="col-sm-10">
-              <input type="tel" class="form-control" id="inputEmail3" placeholder="(xxx) xxx-xx-xx">
+            <label for="inputEmail3" class="col-sm-3 control-label">Password:</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="inputEmail3" placeholder="password">
             </div>
         </div>
         
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">ID Number:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputEmail3" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <label for="inputEmail3" class="col-sm-3 control-label">Repeat password:</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="inputEmail3" placeholder="repeat password">
             </div>
         </div>
         
         <div class="register-btn">
-          <input type="button" class="btn btn-primary" value="Registration" />  
+          <button class="btn btn-primary" type="submit">Registration</button>
+          <div class="checkbox">
+             <label>
+                 <input type="checkbox"> I accept <a href="#">terms & conditions</a>
+             </label>
+          </div>
+          
         </div>
-      </div>
+      </div> <!--end registration-->
       
       <br>
       
-<!-- Extended user info template -->
-      
-      <div class="cabinet">
-          <table class="table table-striped">
-              <thead>
-                  <tr>
-                      <th>Id</th>
-                      <th>Name</th>
-                      <th>Comment</th>
-                      <th>Status</th>
-                      <th>Type</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <th>1</th>
-                      <td>Ololo</td>
-                      <td>Ololo Comment</td>
-                      <td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
-                      <td>Type</td>
-                  </tr>
-                  <tr>
-                      <th>2</th>
-                      <td>Ololo</td>
-                      <td>Ololo Comment</td>
-                      <td><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td>
-                      <td>Type</td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
+      <div id="user-details" class="container user-details"> <!--user details-->
+          <div class="row offset-btm-50">            
+             <div class="col-md-6"> <!--Personal Info-->
+                <div class="block-title"> <!--block-title-->
+                    <h4>Personal Info:</h4>
+                    <button class="btn btn-default" type="submit">Edit</button>
+                </div> <!--end block-title-->
+                
+                <div class="block-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="">First Name:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">ID Number:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Email:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Phone:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Address:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Marital status:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="radio" name="marital"> Married
+                          <input type="radio" name="marital"> Single
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Children:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Sex:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Yyear of birth:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                </div>
+             </div> <!--end Personal Info-->
+             
+             <div class="col-md-6"> <!--Bank Account-->
+                 <div class="block-title">
+                    <h4>Bank Account:</h4>
+                    <button class="btn btn-default" type="submit">Edit</button>
+                 </div>
+                 
+                 <div class="block-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="">First Name:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">ID Number:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Email:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Phone:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Address:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Marital status:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Children:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Sex:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3">Yyear of birth:</label>
+                        <div class="inner-addon right-addon">
+                          <input type="text" class="form-control" placeholder="John">
+                          <i class="glyphicon glyphicon-question-sign"></i>
+                        </div>
+                    </div>
+                </div>
+             </div> <!--end Bank Account-->             
+          </div>
+          
+          <div class="row">
+             <div class="col-md-6"> <!--income-->
+                <div class="block-title">
+                   <h4>Income & Assets:</h4>
+                   <button class="btn btn-default" type="submit">Edit</button>
+                </div>
+                
+                <div class="block-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                </div>
+             </div> <!--end income-->
+             
+             <div class="col-md-6"> <!--education-->
+                <div class="block-title">
+                    <h4>Education & Employment:</h4>
+                    <button class="btn btn-default" type="submit">Edit</button>
+                </div>
+                
+                <div class="block-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">First Name:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="John">
+                        </div>
+                    </div>
+                </div>
+             </div> <!--end education-->
+          </div>
+      </div> <!--end user details-->
 
     </div>
 

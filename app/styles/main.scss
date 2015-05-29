@@ -16,6 +16,7 @@ body {
   padding-bottom: 20px;
 }
 
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -49,30 +50,83 @@ body {
 }
 
 /* REGISTRATION */
-.registration,
-.cabinet {
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    padding: 20px;
-}
 
 .registration {
-    background-color: cornsilk;
     
     div.register-btn {
         text-align: center;
+        margin-top: 80px; 
+        
+        .checkbox {
+            position: absolute;
+            display: inline-block;
+            margin-left: 15px;
+        }
     }
 }
 
-.cabinet {
+.user-details {
+    .offset-btm-50 {
+        margin-bottom: 50px;
+    }
+    
+    /* enable absolute positioning */
+    .inner-addon { 
+        position: relative; 
+    }
+
+    /* style icon */
+    .inner-addon .glyphicon {
+      position: absolute;
+      padding: 10px;
+      pointer-events: none;
+    }
+
+    /* align icon */
+    .left-addon .glyphicon  { left:  0px;}
+    .right-addon .glyphicon { right: 0px;}
+
+    /* add padding  */
+    .left-addon input  { padding-left:  30px; }
+    .right-addon input { padding-right: 30px; }
+    
+    .block-title {
+        padding-bottom: 30px;
+    }
+    
+    .block-title > h4 {
+        display: inline-block;
+    }
+    
+    .block-title > button {
+        float: right;
+    }
+    
+    .block-body {
+        .form-group {
+            text-align: right;
+        }
+        
+        .form-group .inner-addon{
+            display: inline-block;
+            width: 75%;
+            float: right;
+            padding-left: 10px;
+        }
+        
+        .form-group label {
+            padding-top: 7px;
+            margin-bottom: 0;            
+        }
+    } 
     
 }
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 968px) {
   .container {
-    max-width: 730px;
+    max-width: 930px;
   }
 
   /* Remove the padding we set earlier */
