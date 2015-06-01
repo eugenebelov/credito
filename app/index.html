@@ -25,7 +25,126 @@
       <div class="header">
         
         <h3 class="text-muted">Credito</h3>
+        
+        <div class="user-info">
+          <h4>Hello, %user%</h4>
+          <img class="avatar" src="http://www.weblancer.net/img/userpic_male.gif" alt="" />
+        </div>
+
       </div>
+
+      <div class="upload">
+        <div class="container">
+          <div class="row bs-wizard" style="border-bottom:0;">
+            <div class="col-xs-3 bs-wizard-step complete">
+              <!-- <div class="text-center bs-wizard-stepnum">Step 1</div> -->
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="bs-wizard-dot"></a>
+              <div class="text-center bs-wizard-stepnum">Sign up</div>
+              <!-- <div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div> -->
+            </div>
+            
+            <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="bs-wizard-dot"></a>
+              <div class="text-center bs-wizard-stepnum">Upload documents</div>
+              <!-- <div class="bs-wizard-info text-center">Upload documents</div> -->
+            </div>
+            
+            <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+              <!-- <div class="text-center bs-wizard-stepnum">Step 3</div> -->
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="bs-wizard-dot"></a>
+              <div class="text-center bs-wizard-stepnum">Verifying</div>
+              <!-- <div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div> -->
+            </div>
+            
+            <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+              <!-- <div class="text-center bs-wizard-stepnum">Step 4</div> -->
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="bs-wizard-dot"></a>
+              <div class="text-center bs-wizard-stepnum">Calculate your ratinig</div>
+              <!-- <div class="bs-wizard-info text-center"> Curabitur mollis magna at blandit vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div> -->
+            </div>
+          </div>
+
+          <div class="container-fluid upload-snippet">
+            <div class="u-name col-md-4">Name</div>
+
+            <div class="u-message col-md-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+              </p>
+              
+              <i class="glyphicon glyphicon-comment"></i>
+            </div>
+            
+            <div class="u-status col-md-4 approve ">
+              <div class="u-status-label">
+                Verified
+                <i class="glyphicon glyphicon-ok-sign"></i>  
+              </div>
+              <div class="u-upload">
+                <button class="btn btn-default">Upload</button>
+              </div>
+            </div>
+
+            <div class="u-extend-message">
+              <p>Vrificaton message</p>
+            </div>
+          </div>
+
+          <div class="container-fluid upload-snippet">
+            <div class="u-name col-md-4">Name</div>
+
+            <div class="u-message col-md-4">
+              message
+              <i class="glyphicon glyphicon-comment"></i>
+            </div>
+
+            <div class="u-status col-md-4 pending ">
+              <div class="u-status-label">
+                Verified
+                <i class="glyphicon glyphicon-ok-sign"></i>  
+              </div>
+              <div class="u-upload">
+                <button class="btn btn-default">Upload</button>
+              </div>
+            </div>
+
+            <div class="u-extend-message">
+              <p>Vrificaton message</p>
+            </div>
+          </div>
+
+          <div class="container-fluid upload-snippet">
+            <div class="u-name col-md-4">Name</div>
+
+            <div class="u-message col-md-4">
+              message
+              <i class="glyphicon glyphicon-comment"></i>
+            </div>
+
+            <div class="u-status col-md-4 notapprove ">
+              <div class="u-status-label">
+                Verified
+                <i class="glyphicon glyphicon-ok-sign"></i>  
+              </div>
+              <div class="u-upload">
+                <button class="btn btn-default">Upload</button>
+              </div>
+            </div>
+
+            <div class="u-extend-message">
+              <p>Vrificaton message</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br/>
+      <hr>
       
       <div id="regirstration" class="container registration form-horizontal"> <!--registration-->
         <div class="form-group">
@@ -75,6 +194,7 @@
       </div> <!--end registration-->
       
       <br>
+      <hr>
       
       <div id="user-details" class="container user-details"> <!--user details-->
           <div class="row offset-btm-50">            
@@ -438,8 +558,6 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -452,18 +570,11 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
