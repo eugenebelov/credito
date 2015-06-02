@@ -13,6 +13,10 @@ Credito.config(['$routeProvider',
                 templateUrl: 'templates/pages/user-details.html',
                 controller: 'UserDetailsController'
             }).
+            when('/upload', {
+                templateUrl: 'templates/pages/upload-steps.html',
+                controller: 'UploadController'
+            }).
             otherwise({
                 redirectTo: '/'
             });

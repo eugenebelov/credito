@@ -33,4 +33,15 @@ creditoControllers.controller('UserDetailsController', ['$rootScope', '$scope', 
 
 		$rootScope.showUser = true;
 		$rootScope.userName = UserDetails.fname;
+
+
+		$scope.skipFilling = function() {
+			console.log("skipe")
+			$window.location.href = "#/upload"
+		}
+}])
+
+creditoControllers.controller('UploadController', ['$rootScope', '$scope', '$window', 'UserDetails' , 
+	function ($rootScope, $scope, $window, UserDetails) {
+		
 }])
