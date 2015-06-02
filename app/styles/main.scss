@@ -1,5 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
+@import "bs-wizard.scss";
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
@@ -80,10 +81,31 @@ body {
     height: 100%;
 }
 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
 .upload-snippet {
   padding: 15px;
   margin: 0 0 15px 0;
-  height: 100px;
+  min-height: 100px;
   border: 1px solid #444444;
   border-radius: 5px;
   line-height: 75px;

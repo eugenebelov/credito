@@ -2,8 +2,7 @@ var Credito = angular.module('Credito', [
     'ngRoute',
     'creditoControllers',
     'creditoServices',
-    'validation',
-    'validation.rule'
+    'creditoDirectives'
 ]);
 
 Credito.config(['$routeProvider',
@@ -25,23 +24,6 @@ Credito.config(['$routeProvider',
                 redirectTo: '/'
             });
     }]);
-
-Credito.config(['$validationProvider', function ($validationProvider) {
-
-    var defaultMsg;
-
-    /**
-     * Setup a default message for Url
-     */
-    defaultMsg = {
-        url: {
-            error: 'Some error',
-            success: 'Success'
-        }
-    };
-
-    $validationProvider.setDefaultMsg(defaultMsg);
-}]);
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

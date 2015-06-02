@@ -66,7 +66,19 @@ creditoControllers.controller('UserDetailsController', ['$rootScope', '$scope', 
 		}
 }])
 
-creditoControllers.controller('UploadController', ['$rootScope', '$scope', '$window', 'UserDetails' , 
-	function ($rootScope, $scope, $window, UserDetails) {
-		
+creditoControllers.controller('UploadController', ['$rootScope', '$scope', '$window', 
+                                                   'UserDetails', 'FileUpload',
+	function ($rootScope, $scope, $window, UserDetails, FileUpload) {
+        $scope.buttonState = "Browse";
+        $scope.message = true;
+        
+        $scope.$watch('fileUpload', function() {
+           if($scope.fileUpload) {
+               $scope.buttonState = "Upload";
+           }
+       });
+        
+		$scope.deleteFile = function() {
+            $scope.fileUpload = null;
+        }
 }])

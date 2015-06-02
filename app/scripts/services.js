@@ -2,14 +2,6 @@ var creditoServices = angular.module('creditoServices', ['ngResource']);
 
 creditoServices.factory('UserDetails', function($resource){
     
-    // var firstName = '',
-    //     lastName = '';
-
-    // return {
-    //     fname: firstName,
-    //     lname: lastName
-    // };
-
     var Element = function(data) {
         //set defaults properties and functions
         angular.extend(this, {
@@ -29,18 +21,9 @@ creditoServices.factory('UserDetails', function($resource){
     };
     return Element;
 
-
-    // function UserDetails(data) {  
-    //     if (data) {  
-    //         this.setData(data);
-    //     }
-    // };  
-
-    // UserDetails.prototype = {
-    //     setData: function(data) {  
-    //         angular.extend(this, data);  
-    //     }
-    // }
-
-    // return UserDetails; 
 });
+
+
+creditoServices.service('FileUpload', ['$http', function ($http) {
+    
+}]);
