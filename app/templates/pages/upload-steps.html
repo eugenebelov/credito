@@ -2,7 +2,7 @@
  
     <div class="col-md-8"> <!--left side-->
         <div class="row bs-wizard">
-            <div class="col-xs-3 bs-wizard-step active">
+            <div class="col-xs-3 bs-wizard-step complete">
               <!-- <div class="text-center bs-wizard-stepnum">Step 1</div> -->
               <div class="progress"><div class="progress-bar"></div></div>
               <a href="#" class="bs-wizard-dot"></a>
@@ -10,7 +10,7 @@
               <!-- <div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div> -->
             </div>
 
-            <div class="col-xs-3 bs-wizard-step disabled"><!-- complete, active, disabled -->
+            <div class="col-xs-3 bs-wizard-step active"><!-- complete, active, disabled -->
               <div class="progress"><div class="progress-bar"></div></div>
               <a href="#" class="bs-wizard-dot"></a>
               <div class="text-center bs-wizard-stepnum">Upload documents</div>
@@ -35,11 +35,15 @@
           </div>
 
         <div class="upload-form"> <!--upload form-->
+
+          <div ng-repeat="item in uploadForm">
             <div class="upload upload-snippet">
-                <div class="u-name col-md-4">Name</div>
+                <div class="u-name col-md-4">
+                  <h4>{{item.name}}</h4>
+                </div>
 
                 <div class="u-message col-md-4">
-                 <div ng-show="message">
+                 <div ng-show="item.message">
                      <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
                       </p>
@@ -71,6 +75,8 @@
                     </span>
                 </div>
             </div>
+          </div>
+            
             
             
         </div> <!--end upload form-->

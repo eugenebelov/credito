@@ -70,7 +70,23 @@ creditoControllers.controller('UploadController', ['$rootScope', '$scope', '$win
                                                    'UserDetails', 'FileUpload',
 	function ($rootScope, $scope, $window, UserDetails, FileUpload) {
         $scope.buttonState = "Browse";
-        $scope.message = true;
+        
+        $scope.uploadForm = [{
+        	name: "ID",
+        	status: "init",
+        	message: false,
+        	statusLabel: "Browse"
+        }, {
+        	name: "3 Salaryes",
+        	status: "init",
+        	message: false,
+        	statusLabel: "Browse"
+        }, {
+        	name: "3 Month of bank account",
+        	status: "init",
+        	message: false,
+        	statusLabel: "Browse"
+        }]
         
         $scope.$watch('fileUpload', function() {
            if($scope.fileUpload) {
